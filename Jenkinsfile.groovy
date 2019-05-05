@@ -12,6 +12,6 @@ node{
         sh "ssh ec2-user@${ENV} terraform plan"
         sh "ssh ec2-user@${ENV} terraform apply"
     }     
-}      
+      
         
                 
