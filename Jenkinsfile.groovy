@@ -1,5 +1,5 @@
 node{
-    properties([parameters([string(defaultValue: '', description: 'please input IP', name: "ENV", trim: false)])])
+    #properties([parameters([string(defaultValue: '', description: 'please input IP', name: "ENV", trim: false)])])
     git "https://github.com/dilfuza97/Terraform-aws-K8_modules.git"
     stage("Install Terraform"){
         sh "yum install wget unzip zip -y"
