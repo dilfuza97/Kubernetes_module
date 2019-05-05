@@ -1,9 +1,9 @@
 node{
-  stage{
+  stage("Pulling Repo"){
     git 'git@github.com:dilfuza97/Terraform-aws-K8_modules.git'
   }
 
-  stage{
+  stage("Terraform"){
     sh "terraform init"
     sh "terraform apply --auto-approve"
   }
