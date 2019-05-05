@@ -1,6 +1,6 @@
 resource "kubernetes_pod" "hello_world" {
   metadata {
-    name = "hello world"
+    name = "hello-world"
   }
 
   spec {
