@@ -7,11 +7,15 @@ node{
     //     sh "unzip terraform_0.11.13_linux_amd64.zip"
     //     sh "mv terraform /bin/"
     }
+    stage("Copy tf files"){
+        sh "scp -r * ec2-user@${ENV}:/tmp/"
+    }    
     stage("Terraform init"){
-        sh "ssh ec2-user@${ENV} terraform init"
-        sh "ssh ec2-user@${ENV} terraform plan"
-        sh "ssh ec2-user@${ENV} terraform apply"
-    }     
+        sh "ssh ec2-user@${ENV} cd /tmp/ && terraform init"
+        sh "ssh ec2-user@${ENV} cd /tmp/ && terraform plan"
+        sh "ssh ec2-user@${ENV} cd /tmp/ && terraform apply"
+    } 
+    
       
         
                 
