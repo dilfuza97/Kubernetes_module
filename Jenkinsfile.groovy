@@ -1,6 +1,6 @@
 node{
   stage{
-    git git@github.com:dilfuza97/Terraform-aws-K8_modules.git
+    git 'git@github.com:dilfuza97/Terraform-aws-K8_modules.git'
   }
 
   stage{
