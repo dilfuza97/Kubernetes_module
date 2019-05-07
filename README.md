@@ -17,3 +17,13 @@ your kubernetes env will be up and running :)
 
 more info :
 https://github.com/scholzj/terraform-aws-kubernetes
+
+
+
+
+
+
+
+run
+'''''
+export KUBECONFIG=/home/centos/kubeconfig
