@@ -5,6 +5,6 @@ node{
 
   stage("Terraform"){
     sh "terraform init"
-    sh "terraform destroy -var-file=dev.tfvars --auto-approve"
+    sh "terraform apply -var-file=dev.tfvars --auto-approve"
   }
 }
