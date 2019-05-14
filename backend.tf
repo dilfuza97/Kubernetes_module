@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "terrafor-january-dilfuza2"
+    bucket = "dilfuza-terraform"
     key    = "infra.state"
-    region = "us-east-1"
+    region = "eu-west-1"
   }
 }
